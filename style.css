@@ -1,0 +1,336 @@
+body {
+  background-color: #413d36;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* INDEX.HTML */
+/* Navbar Style */
+
+.navbar {
+  z-index: 3;
+  color: #cebea5;
+}
+
+* {
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-family: "Aboreto", cursive;
+  font-weight: 700;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+/* Hero Style */
+
+.banner {
+  background-image: url(src/banner/cappuccino.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* .banner video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} */
+
+.banner h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 72px;
+  position: absolute;
+  justify-content: center;
+  align-text: center;
+  padding-left: 36rem;
+  /* padding-right: 36rem; */
+  padding-bottom: 9rem;
+  z-index: 5;
+  color: #cebea5;
+}
+
+.button {
+  position: absolute;
+  padding-right: 70.5rem;
+  padding-top: 8rem;
+  z-index: 5;
+}
+
+.banner p {
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  position: absolute;
+  /* padding-right: 37rem; */
+  padding-left: 36rem;
+  padding-bottom: 25rem;
+  z-index: 5;
+  color: #ffffff;
+}
+
+.banner svg {
+  position: absolute;
+  justify-content: center;
+  padding-top: 21rem;
+}
+
+/* Line */
+
+.line {
+  color: #cebea5;
+  width: 5rem;
+}
+
+/* About */
+
+#about {
+  color: #cebea5;
+  padding: 10rem;
+}
+
+.text1 {
+  display: flex;
+  justify-content: flex-start;
+  text: start;
+}
+
+.text2 {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+/* index menu */
+
+#menu {
+  padding: 8rem;
+  padding-bottom: 16rem;
+  color: #cebea5;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  color: #cebea5;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #cebea5;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cebea5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Contact */
+
+#kontak {
+  background-image: url(src/contact/coffee-background-space-text-85121087.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#kontak svg {
+  position: absolute;
+  justify-content: center;
+  padding-bottom: 21.3rem;
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  color: #cebea5;
+  border: 1px solid #cebea5;
+  min-height: 50px;
+  padding: 0 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+}
+
+.btn-white::before {
+  content: "";
+  background-color: #cebea5;
+  display: block;
+  width: 45px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+.btn-white::after {
+  content: "";
+  background-color: #cebea5;
+  display: block;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-white:hover {
+  color: #413d36;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-white:hover::after {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-white:hover::before {
+  background-color: #413d36;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* PESANAN.HTML */
+/* Menu */
+
+#kopi {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  color: #cebea5;
+}
+
+/* Card */
+
+.card {
+  /* padding: 2rem; */
+  background-color: #413d36;
+  border: none;
+  color: #cebea5;
+  transition: all 0.25s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h5 {
+  padding: 1rem;
+}
+
+button {
+  font-size: 16px;
+  color: #cebea5;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #cebea5;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #cebea5;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+/*Hover*/
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
